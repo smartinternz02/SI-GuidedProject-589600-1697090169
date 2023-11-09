@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Predicted Value</title>
+	<style>
+		body {
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            animation: changeBackground 40s linear infinite; /* 4 images x 10 seconds each = 40s */
+        }
+
+        @keyframes changeBackground {
+            0% { background-image: url('/static/Image/img2.jpg'); }
+            25% { background-image: url('/static/Image/img8.jpg'); }
+            50% { background-image: url('/static/Image/img4.jpg'); }
+            75% { background-image: url('/static/Image/img5.jpg'); }
+            100% { background-image: url('/static/Image/img6.jpg'); } /* Loop back to the first image */
+        }
+		
+
+		h3 {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+                        font-size: 100px;
+                        color: maroon;
+		}
+
+		form {
+			margin-top: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: black;
+			color: #fff;
+			border: none;
+			padding: 20px 60px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<h3>{{showcase}}</h3>
+	<form action="/" method="get">
+		<input type="submit" value="Enter values again">
+	</form>
+</body>
+
+</html>
